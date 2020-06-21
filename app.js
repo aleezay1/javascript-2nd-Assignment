@@ -80,17 +80,49 @@
 // document.write("Result :"+" "+a)
 
 
-// task 13
-// var userName = prompt("Please Enter Your Username");
-// userName = userName.split("");
-// for (i = 0; i < userName.length; i++) {
-//     if (userName[i] === String.fromCharCode(33) || userName[i] === String.fromCharCode(44) || userName[i] === String.fromCharCode(46) || userName[i] === String.fromCharCode(64)) {
-//         alert("Please Enter Valid Username");
-//     }else {
-//         document.write("Correct");
+// task13
+// var userName = prompt("Enter Username","username is: ");
+// var code;
+// for (var i = 0; i<=userName.length; i++) {
+//    code = userName.charCodeAt(i);
+//    switch (code) {
+//        case 33 :{
+//            alert("plz Enter a valid user name");
+//            break;
+//        }
+//        case 44 :{
+//         alert("plz Enter a valid user name");
+//         break;
 //     }
+//     case 46 :{
+//         alert("plz Enter a valid user name");
+//         break;
+//     }
+//     case 64 :{
+//         alert("plz Enter a valid user name");
+//         break;
+//     }
+           
+          
+//     }
+    
 // }
 
+
+// Another method to solve the qyestion 13
+
+// var getUsername = prompt("Enter your username");
+// for (var i = 0; i < getUsername.length; i++) {
+//      var char = getUsername.charCodeAt(i);
+// if ( char == 33 || char == 64 || char == 44 || char ==46) {
+// alert("not valid" );
+// break;
+// } else {
+// alert("Valid");
+// break;
+
+// } 
+// }
 
 // task 14
 // var arr = ["cake", "apple pie", "cookie", "chips", "patties"];
@@ -106,12 +138,48 @@
 //     document.write("We are sorry. " + userInput + " is <strong>not available</strong> in our bakery");
 // }
 
-// tak 15
 
-// var password = prompt("Enter Your Password");
-// if (password >= String.fromCharCode(65) || password <= String.fromCharCode(90) && password >= 0 || password <= 9) {
-//     document.write(password);
-// }
+// task 15
+// var password, message;
+//     var whileCounter = 0;
+//     var CFAL = false;
+//     while (whileCounter != 1) {
+//         password = prompt("Enter Password");
+//         if (password.length <= 5) {
+//             alert("Must be 6 or more characters long");
+//         }
+//         else {
+//             if (password.charCodeAt(0) >= 48 && password.charCodeAt(0) <= 57) {
+//                 alert("Password cannot begin with a number\nPlease enter a valid password");
+//             }
+//             else {
+//                 for (var i = 0; i <= password.length-1; i++) {
+//                     if (password[i].charCodeAt() >= 48 && password[i].charCodeAt() <= 57) {
+//                         CFAL = true;
+//                         whileCounter = 1;
+//                         break;
+//                     }
+//                     else {
+//                         continue;
+//                     }
+//                 }
+//                 if (CFAL == true) {
+//                     whileCounter = 1;
+//                     message = "Password is OK.";
+//                 }
+//                 else {
+//                     whileCounter = 0;
+//                     message = "Invalid Password!\nYou must enter both lettes and numbers in your password.";
+//                 }
+//                 alert(message);
+//             }
+//         }
+//     }
+
+
+
+
+
 
 
 // task16
